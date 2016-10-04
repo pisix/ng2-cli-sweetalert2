@@ -1,0 +1,25 @@
+{
+  "name": "ng2-cli-sweetalert2",
+  "version": "0.0.1",
+  "description": "a wrapper for sweet alert 2 that works with angular 2 cli",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshterrill/ng2-cli-sweetalert2.git"
+  },
+  "author": "Josh Terrill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshterrill/ng2-cli-sweetalert2/issues"
+  },
+  "homepage": "https://github.com/joshterrill/ng2-cli-sweetalert2#readme",
+  "dependencies": {
+    "@angular/core": "^2.0.1",
+    "@angular/platform-browser": "^2.0.1",
+    "@types/lodash": "^4.14.36",
+    "lodash": "^4.16.3"
+  }
+}
