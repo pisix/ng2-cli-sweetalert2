@@ -1,13 +1,16 @@
+
+
 import { Injectable } from '@angular/core'
-import { window } from '@angular/platform-browser/src/facade/browser';
 import { assign } from 'lodash';
+
+let win : any = typeof window !== 'undefined' && window || {};
 
 @Injectable()
 export class SweetAlertService {
   constructor() {}
 
   swal() {
-    return window.Sweetalert2(...Array.from(arguments));
+    return win.Sweetalert2(...Array.from(arguments));
   }
 
   prompt(options) {
@@ -16,7 +19,7 @@ export class SweetAlertService {
       confirmButtonText: 'Submit',
       input: 'text'
     };
-    return window.Sweetalert2(assign(baseOptions, options));
+    return win.Sweetalert2(assign(baseOptions, options));
   }
 
   confirm(options) {
@@ -25,7 +28,7 @@ export class SweetAlertService {
       confirmButtonText: 'Confirm',
       type: 'warning'
     };
-    return window.Sweetalert2(assign(baseOptions, options));
+    return win.Sweetalert2(assign(baseOptions, options));
   }
 
   alert(options) {
@@ -33,7 +36,7 @@ export class SweetAlertService {
       confirmButtonText: 'OK',
       type: 'info'
     };
-    return window.Sweetalert2(assign(baseOptions, options));
+    return win.Sweetalert2(assign(baseOptions, options));
   }
 
   question(options) {

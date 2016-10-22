@@ -61,3 +61,7 @@ this.swal.success(
   console.log("Clicked cancel");
 });
 ```
+
+### build process
+
+Transpile to javascript and generate a source map via **npm run build**
