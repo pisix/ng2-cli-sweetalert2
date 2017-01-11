@@ -48,8 +48,8 @@ define(["require", "exports", '@angular/core', 'lodash'], function (require, exp
         SweetAlertService.prototype.error = function (options) {
             return this.alert(lodash_1.assign({ type: 'error' }, options));
         };
-        SweetAlertService.prototype.warn = function (options) {
-            return this.alert(lodash_1.assign({ type: 'warn' }, options));
+        SweetAlertService.prototype.warning = function (options) {
+            return this.alert(lodash_1.assign({ type: 'warning' }, options));
         };
         SweetAlertService.prototype.info = function (options) {
             return this.alert(lodash_1.assign({ type: 'info' }, options));
