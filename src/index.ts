@@ -51,8 +51,8 @@ export class SweetAlertService {
     return this.alert(assign({ type: 'error' }, options));
   }
 
-  warn(options) {
-    return this.alert(assign({ type: 'warn' }, options));
+  warning(options) {
+    return this.alert(assign({ type: 'warning' }, options));
   }
 
   info(options) {
