@@ -1,6 +1,6 @@
 {
   "name": "ng2-cli-sweetalert2",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a wrapper for sweet alert 2 that works with angular 2 cli",
   "main": "index.ts",
   "scripts": {
